@@ -55,6 +55,9 @@
             location.reload();
         }
         (function () {
+             localStorage.getItem("skin1") == null ? localStorage.setItem("skin1", '#99004d') : '';
+            localStorage.getItem("skin2") == null ? localStorage.setItem("skin2", '#ff48a5') : '';
+            localStorage.getItem("skin3") == null ? localStorage.setItem("skin3", '#ecc9db') : '';
             const range = document.createRange()
             const frag = range.createContextualFragment(`
                 <style>
